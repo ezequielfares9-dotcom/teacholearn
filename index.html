@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TeachOrLearn — Enseña o Aprende</title>
+  <meta name="description" content="Plataforma simple con recursos descargables para profesores y estudiantes." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">T</div>
+        <div class="brand-text">
+          <span class="mini">Bienvenido a</span>
+          <h1>Teach<span class="accent">Or</span>Learn</h1>
+        </div>
+      </div>
+      <nav class="role-switch">
+        <button id="btnTeacher" class="chip active" aria-pressed="true">Soy profesor/a</button>
+        <button id="btnStudent" class="chip" aria-pressed="false">Soy estudiante</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Nueva plataforma educativa</span>
+          <h2>Enseña o aprende con <span class="accent">claridad</span> y <span class="accent">estilo</span></h2>
+          <p>
+            TeachOrLearn reúne plantillas, guías y recursos prácticos para profesores y estudiantes.
+            Todo en una interfaz simple, bonita y rápida.
+          </p>
+          <div class="cta">
+            <a href="#explore" class="btn primary">Explorar recursos</a>
+            <a href="#how" class="btn">¿Cómo funciona?</a>
+          </div>
+          <div class="social-proof">
+            <img src="assets/card-2.svg" alt="clase" class="sp-avatar" />
+            <p class="muted">+500 descargas de plantillas en el primer mes — docentes y estudiantes felices ✨</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/hero.svg" alt="Hero TeachOrLearn" class="hero-img" />
+          <div class="hero-card">
+            <p class="sc-title">Descarga inmediata</p>
+            <p class="muted">Plantillas en .md / .txt listas para imprimir o editar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <div class="container">
+        <h3>¿Cómo funciona?</h3>
+        <div class="how-grid">
+          <div class="how-card">
+            <div class="how-num">1</div>
+            <h4>Elige tu rol</h4>
+            <p>Profesor o estudiante: verás recursos adaptados a tus necesidades.</p>
+          </div>
+          <div class="how-card">
+            <div class="how-num">2</div>
+            <h4>Busca y filtra</h4>
+            <p>Usa la barra de búsqueda y etiquetas para encontrar justo lo que quieres.</p>
+          </div>
+          <div class="how-card">
+            <div class="how-num">3</div>
+            <h4>Descarga y usa</h4>
+            <p>Clic en descargar y listo. Sin registro, sin complicaciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore" class="explore">
+      <div class="container">
+        <div class="explore-head">
+          <div>
+            <h3 id="resourceTitle">Recursos para profesores</h3>
+            <p class="muted">Descargas rápidas, listas para imprimir o editar.</p>
+          </div>
+          <div class="filters">
+            <input id="search" type="search" placeholder="Buscar: rúbrica, lectura, plan..." aria-label="buscar recursos" />
+            <select id="tagSelect" aria-label="filtrar por etiqueta">
+              <option value="">Todas las etiquetas</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="grid" class="grid"></div>
+
+        <div id="empty" class="empty hidden">No hay resultados. Prueba con otra búsqueda o etiqueta.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="muted">© <span id="year"></span> TeachOrLearn. Hecho con ♥ en Ecuador.</p>
+        <p class="tiny muted">Reemplaza imágenes, textos y agrega más recursos en los archivos.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="link">Términos</a>
+        <a href="#" class="link">Privacidad</a>
+        <a href="#" class="link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
